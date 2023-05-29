@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "coding-challenge-verifier",
+      "request": "launch",
+      "type": "dart",
+      "program": "bin/server.dart"
+    }
+  ]
+}

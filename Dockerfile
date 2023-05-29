@@ -1,5 +1,5 @@
 # Official Dart image: https://hub.docker.com/_/dart
-FROM dart:2.14.4 AS builder
+FROM dart:3.0.0 AS builder
 
 # Resolve app dependencies & copy over.
 WORKDIR /app

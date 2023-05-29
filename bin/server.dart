@@ -49,9 +49,6 @@ Future<Response> handler(Request request) async {
     client.close();
   }
 
-  // final httpService = HttpService();
-  // final sourceContents = await httpService.retrieveContents();
-
   return Response.ok('Diddley dunarooni.');
 }
 

@@ -9,7 +9,7 @@ class FirestoreService {
       {required String projectId,
       AutoRefreshingAuthClient? client,
       FirestoreApi? api})
-      : _databaseName = 'projects/' + projectId + '/databases/(default)' {
+      : _databaseName = 'projects/$projectId/databases/(default)' {
     _api = api ?? FirestoreApi(client!);
     _docs = _api.projects.databases.documents;
   }
@@ -22,7 +22,7 @@ class FirestoreService {
           {required String at, required JsonMap to}) async =>
       _docs.createDocument(
         to.toDocument(),
-        _databaseName + '/documents',
+        '$_databaseName/documents',
         at,
       );
 }
