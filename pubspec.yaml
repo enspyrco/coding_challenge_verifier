@@ -7,9 +7,10 @@ environment:
 
 dependencies:
   shelf: ^1.4.1
-  crypto: ^3.0.3
   googleapis: ^11.2.0
   googleapis_auth: ^1.4.1
+  github_webhooks:
+    git: https://github.com/enspyrco/github_webhooks.git
 
 dev_dependencies:
   lints: ^2.1.0
